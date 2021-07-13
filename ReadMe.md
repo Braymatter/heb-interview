@@ -16,6 +16,10 @@ It runs on port 8080 by default. There's a postman api you can use in the root o
 to make testing this api easier. This project runs on JDK11, though it really only uses language
 level 8. 
 
+After you clone/pull this project be sure to set your
+Settings->Build,Compile,Deploy->BuildTools->Gradle JDK Version to 11, 
+as well as your project language level
+
 ## Overall Strategy of Implementation
 The main point of this was to minimize the amount of calls to Imagga. I computed the hex of the md5
 checksum of each image and use that as the primary identifier for a given image. There's a chance of 
