@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "2b3f0e3d-f829-4130-bcae-879cdf699657",
+		"name": "HEB-Interview API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FetchImages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/images",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"images"
+					],
+					"query": [
+						{
+							"key": "objects",
+							"value": "dog,cat,table",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchImage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/images/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"images",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "D0FBEA2A5D394B61E816554156599E11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProcessNewImage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Cayle/Downloads/E4cOSLw.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/images",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProcessNewImage(Kitty)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Cayle/Downloads/0LINzxs.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/images",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"images"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
