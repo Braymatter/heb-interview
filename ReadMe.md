@@ -20,6 +20,10 @@ After you clone/pull this project be sure to set your
 Settings->Build,Compile,Deploy->BuildTools->Gradle JDK Version to 11, 
 as well as your project language level
 
+You will need to set the S3_ACCESS_KEY and S3_SECRET_KEY environment variables to the values specified 
+(I've sent an email to Ben Dean)
+
+AWS Called me multiple times for putting my credentials in a public repo (to be fair it is a huge no-no for a normal app)
 ## Overall Strategy of Implementation
 The main point of this was to minimize the amount of calls to Imagga. I computed the hex of the md5
 checksum of each image and use that as the primary identifier for a given image. There's a chance of 
